@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.velmurugan.getcurrentspeedandroidexample.FirstActivity">
+
+    <EditText
+        android:id="@+id/etFixedPrice"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/tvFixedPrice"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/tvFixedPrice"
+        android:layout_toRightOf="@+id/tvFixedPrice"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tvFixedPrice"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="203dp"
+        android:text="Enter Fixed Price"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRunningCharge"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFixedPrice"
+        android:layout_alignStart="@+id/tvFixedPrice"
+        android:layout_below="@+id/etFixedPrice"
+        android:textColor="#fff"
+        android:layout_marginTop="22dp"
+        android:text="Charge Per Km"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etChargePerKm"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/etFixedPrice"
+        android:layout_alignStart="@+id/etFixedPrice"
+        android:layout_alignTop="@+id/tvRunningCharge"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tvWaitingCharge"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_alignLeft="@+id/tvRunningCharge"
+        android:layout_alignStart="@+id/tvRunningCharge"
+        android:layout_below="@+id/etChargePerKm"
+        android:layout_marginTop="17dp"
+        android:text="Waiting Charge/min"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etWaitingCharge"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/etChargePerKm"
+        android:layout_alignStart="@+id/etChargePerKm"
+        android:layout_alignTop="@+id/tvWaitingCharge"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <ImageView
+        android:id="@+id/ivMap1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignEnd="@+id/etWaitingCharge"
+        android:layout_alignRight="@+id/etWaitingCharge"
+        android:layout_below="@+id/etWaitingCharge"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/ic_map_location" />
+
+    <Button
+        android:id="@+id/btSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Proceed"
+        android:background="#323334"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/tvSetFare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Set Your Credentials" />
+
+</RelativeLayout>
