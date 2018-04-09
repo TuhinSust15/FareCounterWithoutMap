@@ -7,7 +7,7 @@
     android:background="@drawable/background">
 
     <Button
-        android:id="@+id/getCurrentSpeed"
+        android:id="@+id/btStart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -35,7 +35,7 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/getCurrentSpeed"
+        android:layout_above="@+id/btStart"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="13dp"
@@ -82,6 +82,17 @@
         android:textSize="24sp" />
 
     <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFare"
+        android:layout_alignStart="@+id/tvFare"
+        android:layout_below="@+id/tvWaitTime"
+        android:text="00:00:00"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <TextView
         android:id="@+id/tvFare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -104,6 +115,17 @@
         android:textColor="#fff"
         android:textSize="30sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textFare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFare"
+        android:layout_alignStart="@+id/tvFare"
+        android:layout_below="@+id/tvFare"
+        android:text="0.0"
+        android:textColor="#fff"
+        android:textSize="40sp" />
 
 
 </RelativeLayout>
